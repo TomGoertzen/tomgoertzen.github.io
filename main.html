@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tom Goertzen</title>
+  <style>
+    :root {
+      --link-ochre: #e64626;
+    }
+    body {
+      margin: 0;
+      background: #ffffff;
+      color: #000000;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem;
+    }
+    h1 { margin-bottom: 0.5rem; font-size: 2rem; }
+    a { color: var(--link-ochre); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .photo {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+      background: #f4f4f4;
+    }
+    .header {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 1.25rem;
+      align-items: start;
+      margin-bottom: 1.5rem;
+    }
+    @media (max-width: 560px) {
+      .header { grid-template-columns: 1fr; }
+      .photo { width: 100%; height: auto; }
+    }
+    .section-title { margin-top: 2rem; margin-bottom: 0.5rem; font-size: 1.25rem; }
+    .muted { color: #222; }
+  </style>
+</head>
+<body>
+
+  <main class="wrap">
+    <h1>Tom Goertzen</h1>
+    <header class="header">
+      <img class="photo" src="Tom.jpg" alt="Photo of Tom Goertzen" />
+      <div>
+        <ul>
+          <li>Postdoctoral researcher at <a href="https://mathematical-research-institute.sydney.edu.au/" target="_blank">SMRI</a>, University of Sydney under <a href="https://www.maths.usyd.edu.au/u/geordie/">Geordie Williamson</a></li>
+          <li>Previously studied at RWTH Aachen University and University of Tokyo (1 semester)</li>
+          <li>Research interests: representation theory, algebraic combinatorics, geometry, computer algebra</li>
+          <li>PhD at RWTH Aachen under <a href="#">Alice Niemeyer</a> &amp; <a href="https://www.math.rwth-aachen.de/~Daniel.Robertz/index_en.html">Daniel Robertz</a>, <a href="https://www.sfbtrr280.de/en/">SFB/TRR 280</a> project</li>
+          <li>Collaborated with engineers &amp; architects on resource-efficient construction design strategies</li>
+          <li>Email: <span class="muted">first.lastname [at] sydney.edu.au</span></li>
+        </ul>
+      </div>
+    </header>
+
+    <section>
+      <h2 class="section-title">Selected Research</h2>
+      <ul>
+        <li>Akpanya, R., Goertzen, T. <em>Simplicial surfaces with given automorphism group.</em> J Algebr Comb 62, 19 (2025). <a href="https://doi.org/10.1007/s10801-025-01424-4" target="_blank">DOI link</a></li>
+        <li>Goertzen, T., Neef, T., Scheffler, P., Macek, D., Mechtcherine, V., Niemeyer, A. C. <em>3D concrete printing of topological interlocking blocks</em>, Materials &amp; Design, 254 (2025). <a href="https://doi.org/10.1016/j.matdes.2025.114049" target="_blank">DOI link</a></li>
+        <li>Goertzen, T., Macek, D., Schnelle, L., Weiß, M., Reese, S., Holthusen, H., Niemeyer, A. C. <em>Influence of block arrangement on mechanical performance in topological interlocking assemblies</em>, Int. J. Solids and Structures, 306 (2025). <a href="https://doi.org/10.1016/j.ijsolstr.2024.113102" target="_blank">DOI link</a></li>
+      </ul>
+      <p>More research: <a href="research.pdf" target="_blank">Publication list (PDF)</a>, <a href="https://scholar.google.com/citations?user=-g9PryQAAAAJ&amp;hl=en&amp;authuser=1" target="_blank">Google Scholar</a>, <a href="https://www.researchgate.net/profile/Tom-Goertzen" target="_blank">ResearchGate</a>, <a href="https://github.com/TomGoertzen/" target="_blank">GitHub</a></p>
+    </section>
+  </main>
+</body>
+</html>
